@@ -1,6 +1,6 @@
 *{
-	margin: 0px; 
-	padding: 5px;
+  margin: 0px; 
+  padding: 5px;
 }
 
 .navbar-brand{
@@ -33,10 +33,10 @@ font-size: 15px;
 }
 
 body{
-	background-color: #1e90ff;
-	color: #000000;
-	font-weight: normal;
-	margin: 0px;
+  background-color: #1e90ff;
+  color: #000000;
+  font-weight: normal;
+  margin: 0px;
   padding: 0px;
 }
 
@@ -50,7 +50,7 @@ padding-bottom: 0px;
 }
 
 form{
-	size: 1000px;
+  size: 1000px;
 }
 
 td{
@@ -61,47 +61,47 @@ font-weight: normal;
 }
 
 button{
-	background-color: #4caf50;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 8px;
-	cursor: pointer;
-	width: 100px;
-	opacity: 0.9;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 8px;
+  cursor: pointer;
+  width: 100px;
+  opacity: 0.9;
 }
 
 button:hover{
-	opacity: 1;
-	color: #000fff;
+  opacity: 1;
+  color: #000fff;
 }
 
 .btnSubmit{
-	float: right;
-	background-color: #008000;
-	text-align: center;
+  float: right;
+  background-color: #008000;
+  text-align: center;
 }
 
 .btnReset{
-	float: left;
-	background-color: #ff0000;
-	text-align: center;
+  float: left;
+  background-color: #ff0000;
+  text-align: center;
 
 }
 
 footer{
-	bottom:0;
-	font-size:10pt;
-	height:35px;
-	width:100%;
+  bottom:0;
+  font-size:10pt;
+  height:35px;
+  width:100%;
 }
 
 .logo-subtext{
-	color:#4285f4;
-	font:16px/16px roboto-regular, arial, sans-serif;
-	left:215px;
-	position:relative;
-	top:76px;
-	white-space:nowrap
+  color:#4285f4;
+  font:16px/16px roboto-regular, arial, sans-serif;
+  left:215px;
+  position:relative;
+  top:76px;
+  white-space:nowrap
 }
 
 <!--footer-->
