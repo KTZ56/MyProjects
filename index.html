@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<body>
+<section id="nav-bar">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand"><img src="Logo.jpeg" >UNIVERSITY Sit.<br>THE CHARTERED CAMPUS.<br>PROVIDE EXCELLENT EDUCATION.</a>
+</nav>
+</section>
+<div>
+<div><h1>Student Data Upload</h1></div>
+</div>
+ <!-- [SEARCH FORM] -->
+    <form action="http://localhost:8082/websites/search.php" method="GET" onsubmit="return fetch();">
+      <input type="text" id="search" name="search" required/>
+      <input type="submit" value="Search" name="Search"/>
+    </form>
+    <!-- [SEARCH RESULTS] -->
+    <div id="results"></div>
+<!---<form class="stsearch" action="http://localhost:8082/websites/search.php">
+	<h3>Search Student:</h3>
+  <input type="text" placeholder="Search.." name="search" >
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>-->
+<div class="container">
+<form>	
+<table>
+<tr>
+ <td>  Select image to upload:</td>
+ <td> <input type="file" name="fileToUpload" id="fileToUpload"></td>
+ <td> <input type="submit" value="Upload Image" name="submit"></td>
+</tr>	
+</table>
+</form>
+<form action="http://localhost:8082/websites/reg.php" method="POST">
+<table align="center" style="border: 2px solid grey; width: 650px; height: 200px; background-color: #1e90ff;">
+<tr>
+<td>Reg No: </td>
+<td><input type="text" name="Regno" required></td>
+<td>Firstname: </td>
+<td><input type="text" name="Firstname" required></td>
+</tr>
+<tr>
+<td>Surname: </td>
+<td><input type="text" name="Surname" required></td>
+<td>Lastname: </td>
+<td><input type="text" name="Lastname" required></td>
+</tr>
+<tr>	
+<td>DOB: </td>
+<td><input type="Date" name="DOB" value="DOB" required></td>
+<td>Gender: </td>
+<td><select name="Gender">
+<option selected="selected">Select Sex</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+</tr>
+<tr>
+<td>Email: </td>
+<td><input type="Email" name="Email" required></td>
+</td>
+<td>Country: </td>
+<td><select name="Country">
+<option selected="selected">-Select Country-</option>
+<option value="Uganda">Uganda</option>
+<option value="South Sudan">South Sudan</option>
+<option value="Kenya">Kenya</option>
+<option value="Rwanda">Rwanda</option>
+<option value="Somalia">Somalia</option>
+<option value="Ethiopia">Ethiopia</option>
+<option value="Sudan">Sudan</option>
+<option value="Burundi">Burundi</option>
+<option value="Tanzania">Tanzania</option>
+<option value="Eriteria">Eriteria</option>
+<option value="Chad">Chad</option>
+<option value="Nigeria">Nigeria</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Phone NO: </td>
+<td><input type="Phone" name="Phone" required></td>
+<td>Program: </td>
+<td><select name="program" value="program">
+<option selected="selected" value="default">-select program-</option>
+<option value="Certificate">Certificate</option>
+<option value="Diploma">Diploma</option>
+<option value="Degree">Degree</option>
+<option value="Masters">Masters</option>
+<option value="Phd">Phd</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Course: </td>
+<td><select name="Course" value="Course">
+<option selected="selected" value="default">-select course-</option>
+<option value="Computer Science & Information Technology">Computer Science & Information Technology</option>
+<option value="Bussiness Administration">Business Administration</option>
+<option value="Human Resource Management">Human Resource Management</option>
+<option value="Banking and Finance">Banking and Finance</option>
+<option value="Sales and Marketing">Sales and Marketing</option>
+<option value="Mass Communication">Mass Communication</option>
+<option value="Political Science">Political Science</option>
+<option value="Public Administration">Public Administration</option>
+<option value="Development Studies">Development Studies</option>
+<option value="Art and Design Education">Art and Design Education</option>
+<option value="Industrial and Fine Arts">Industrial and Fine Arts</option>
+<option value="Industrial Design">Industrial Design</option>
+<option value="Science Agriculture">Science Agriculture</option>
+<option value="Science Agriculture with Education">Science Agriculture with Education</option>
+<option value="Foundations of Education">Foundations of Education</option>
+<option value="Psychology Educational">Psychology Educational</option>
+<option value="Curriculum Studies">Curriculum Studies</option>
+</select></td>	
+<td>Department: </td>
+<td><select name="Department" required>
+<option selected = "selected" value="default">-Select Department-</option>
+<option value="Business & Management">Business & Management</option>
+<option value="Arts and Social Sciences">Arts and Social Sciences</option>
+<option value="Industrial Art & Design">Industrial Art & Design</option>
+<option value="School of Natural Sciences">School of Natural Sciences</option>
+<option value="School Of Computer Science & Information Technology">School Of Computer Science & Information Technology</option>
+<option value="School Of Education">School Of Education</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Year: </td>
+<td><select name="Year">
+<option selected="selected" value="default">-Select Year-</option>
+<option value="I">I</option>
+<option value="II">II</option>
+<option value="III">III</option>
+<option value="IV">IV</option>
+<option value="V">V</option>
+<option value="VI">VI</option>
+<option value="VII">VII</option>
+<option value="other">others</option>
+</select></td>
+<td>Academic Year:</td>
+<td><select name="AcademicYear">
+<option selected="selected" value="default">-Academic Year-</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Semester :</td>
+<td><select name="Semester">
+<option selected="selected" value="default">-Semester-</option>
+<option value="I">I</option>
+<option value="II">II</option>
+<option value="III">III</option>
+<option value="IV">IV</option>
+<option value="V">V</option>
+<option value="VI">VI</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>	
+<button type="submit" class="btnSubmit" name="submit" value="submit">Submit</button>
+</td>
+<td>
+<button type="Reset" class="btnReset" name="Reset" value="Clear">Reset</button>
+</td>
+</tr>
+</table>
+</form>
+  <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+          </div>
+          <div class="col-xs-6 col-md-3">
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved, Kampala University
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+</div>
+</body>
+</html>
